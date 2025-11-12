@@ -22,4 +22,12 @@ const StockSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Please provide last day traded price"],
   },
+  dayTimeSeries: {
+    type: [Object],
+    default: [],
+  },
+  tenMinTimeSeries: {
+    type: [Object],
+    default: [],
+  },
 });
